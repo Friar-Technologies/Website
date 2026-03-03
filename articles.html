@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/cpp.min.js"></script>
+    <title>Friar Technologies</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+
+    <!-- Use MathJax v3 -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Load Marked.js (for parsing Markdown) -->
+    <script src="markdown.js"></script>
+
+    <!-- Load your custom script after MathJax and Marked.js -->
+    <script defer type="text/javascript" src="script4.js"></script>
+</head>
+      
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="articles.html">Articles</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div id="home" class="text">
+    <div id="title">
+        <h1>Friar Technologies</h1>
+        <h2>Articles</h2>
+    </div>
+    <p class="info">
+      Here you can find articles written by our members!
+    </p>
+    
+    
+    <ul class="link-list">
+      <li>
+          <a href="javascript:void(0);" onclick="loadMarkdown('articles\\HumanBenchmark.md');">
+              <div class="card">
+                  <h3>Beating Human Benchmark with Python Automation</h3>
+                  <p><strong>Author:</strong> Erlis Hoxha</p>
+                  <p><strong>Date:</strong> December 2024</p>
+                  <p class="description">Explore how Python automation can be used to beat popular human benchmark challenges.</p>
+              </div>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0);" onclick="loadMarkdown('articles/MLPs.md');">
+              <div class="card">
+                  <h3>Analysis of Multilayer Perceptrons</h3>
+                  <p><strong>Author:</strong> Adam Jacuch</p>
+                  <p><strong>Date:</strong> December 2024</p>
+                  <p class="description">An in-depth look at the design, training, and performance of multilayer perceptrons in machine learning.</p>
+              </div>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0);" onclick="loadMarkdown('articles/Plinko.md');">
+              <div class="card">
+                  <h3>ROBLOX Plinko Strategy</h3>
+                  <p><strong>Author:</strong> Logan Rembisz</p>
+                  <p><strong>Date:</strong> December 2024</p>
+                  <p class="description">Learn strategies to maximize success in ROBLOX Plinko games.</p>
+              </div>
+          </a>
+      </li>
+  </ul>
+
+
+  </div>
+  <div id="article-content" class="text"></div>
+  <button class="exit" onclick="location.href='articles.html';">Exit</button>
+  <h4 class="watermark">2024 SAHS Coding Club</h4>
+</body>
+</html>
